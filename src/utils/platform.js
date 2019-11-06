@@ -7,6 +7,6 @@ export function isIphoneX() {
     Platform.OS === "ios" &&
     !Platform.isPad &&
     !Platform.isTVOS &&
-    (dimension.height === 812 || dimension.width === 812)
+    (dimension.height === 812 || dimension.width === 812 || dimension.height === 896)
   );
 }

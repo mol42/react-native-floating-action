@@ -115,10 +115,7 @@ class FloatingAction extends Component {
   }
 
   get distanceToVerticalEdge() {
-    const { distanceToEdge } = this.props;
-    return typeof distanceToEdge === 'number'
-      ? distanceToEdge
-      : distanceToEdge.vertical;
+    return (isIphoneX ? 75 : 50) + 15;
   }
 
   onKeyboardShow = e => {
