@@ -115,7 +115,7 @@ class FloatingAction extends Component {
   }
 
   get distanceToVerticalEdge() {
-    return (isIphoneX() ? 90 : 50) + 30;
+    return this.props.distanceToVerticalEdge;
   }
 
   onKeyboardShow = e => {
