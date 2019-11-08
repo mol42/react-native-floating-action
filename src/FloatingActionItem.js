@@ -28,10 +28,7 @@ class FloatingActionItem extends Component {
   }
 
   get distanceToVerticalEdge() {
-    const { distanceToEdge } = this.props;
-    return typeof distanceToEdge === 'number'
-      ? distanceToEdge
-      : distanceToEdge.vertical;
+    return this.props.distanceToVerticalEdge;
   }
 
   handleOnPress = () => {

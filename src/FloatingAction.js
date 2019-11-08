@@ -507,6 +507,7 @@ class FloatingAction extends Component {
               active={active}
               onPress={this.handlePressItem}
               animated={animated}
+              distanceToVerticalEdge={this.props.distanceToVerticalEdge}
             />
           );
         })}
